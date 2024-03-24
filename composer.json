@@ -1,0 +1,32 @@
+{
+  "name": "mistralys/php-projects-navigator",
+  "description": "Overview generator for projects, tools and websites in a local development webserver.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "homepage": "https://github.com/mistralys/php-projects-navigator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Mordziol",
+      "email": "s.mordziol@mistralys.eu",
+      "homepage": "https://www.mistralys.eu",
+      "role": "Lead"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src"
+    ]
+  },
+  "require": {
+    "php": ">=8.1",
+    "mistralys/application-utils-core": "^1.1",
+    "mistralys/application-localization": "^1.4",
+    "mistralys/application-utils-collections": "^1.1",
+    "twbs/bootstrap": ">=v5.3.3",
+    "fortawesome/font-awesome": ">=6.5.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  }
+}
