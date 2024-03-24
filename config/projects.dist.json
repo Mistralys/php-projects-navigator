@@ -1,0 +1,27 @@
+{
+  "webRootURL": "http://127.0.0.1",
+  "webRootPath": "/var/www",
+  "navigatorFolder": "tools/php-projects-navigator",
+  "projectFolders": [
+    {
+      "label": "Websites",
+      "folder": "websites"
+    },
+    {
+      "label": "Libraries",
+      "folder": "libraries"
+    }
+  ],
+  "tools": [
+    {
+      "label": "phpMyAdmin",
+      "folder": "phpMyAdmin",
+      "inMainNav": true
+    },
+    {
+      "label": "PHP Info",
+      "file": "phpinfo.php",
+      "inMainNav": false
+    }
+  ]
+}
