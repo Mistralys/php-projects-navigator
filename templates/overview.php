@@ -19,11 +19,15 @@ $appURL = $manager->getManagerURL();
     <link rel="canonical" href="<?php echo $appURL ?>">
     <link href="<?php echo $appURL ?>/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo $appURL ?>/htdocs/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="<?php echo $appURL ?>/htdocs/favicon.ico">
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><?php echo $manager->getName() ?></a>
+        <a class="navbar-brand" href="#">
+            <img src="<?php echo $appURL ?>/htdocs/img/logo.png" alt="<?php pt('Logo for the %1$s application.', $manager->getName()) ?>" class="logo">
+            <?php echo $manager->getName() ?>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

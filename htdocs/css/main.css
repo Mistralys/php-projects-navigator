@@ -1,3 +1,7 @@
 BODY{
     padding-top: 5rem;
 }
+
+.navbar-brand .logo{
+    width: 30px;
+}
