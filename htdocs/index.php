@@ -32,11 +32,15 @@ foreach($config->getArray('projectFolders') as $folder) {
 }
 
 foreach($config->getArray('tools') as $tool) {
-    $pm->addTool(
+    $entry = $pm->addTool(
         $tool['label'],
-        $tool['folder'] ?? $tool['file']
+        $tool['folder'] ?? $tool['file'] ?? ''
     )
         ->showInMainNav($tool['inMainNav'] ?? false);
+
+    if(isset($tool['url'])) {
+        $entry->setCustomURL($tool['url']);
+    }
 }
 
 $pm->display();

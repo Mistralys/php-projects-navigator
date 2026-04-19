@@ -114,7 +114,7 @@ class ProjectManager implements  RenderableInterface
      * @param string $relativePath
      * @return Tool
      */
-    public function addTool(string $label, string $relativePath) : Tool
+    public function addTool(string $label, string $relativePath = '') : Tool
     {
         $tool = new Tool($this, $label, $relativePath);
         $this->tools[] = $tool;
